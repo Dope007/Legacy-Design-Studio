@@ -5,50 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+
+    <!-- Sticky Header -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Legacy Design Studio</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="home">
-        <div class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="hero.PNG" alt="Transform Your Space">
+        <div class="hero-text">
             <h1>Transform Your Space</h1>
             <p>Experiential Designs | Budget-Friendly Luxury</p>
-            <button class="btn">Get Free Consultation</button>
+            <a href="#contact" class="cta-button">Get Free Consultation</a>
         </div>
     </section>
 
-    <section id="stats">
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">Modular Kitchens</div>
+            <div class="service">Modular Wardrobes</div>
+            <div class="service">Lighting & Flooring</div>
+            <div class="service">Electrical & Civil Work</div>
+            <div class="service">False Ceilings & Wall Painting</div>
+        </div>
+    </section>
+
+    <!-- Experience & Clients Animation -->
+    <section class="stats">
         <div class="stat">
-            <h2 class="counter" data-target="500">0</h2>
+            <span class="counter" data-count="100">0</span>
             <p>Happy Clients</p>
         </div>
         <div class="stat">
-            <h2 class="counter" data-target="10">0</h2>
+            <span class="counter" data-count="10">0</span>
             <p>Years of Experience</p>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Mumbai, India</p>
-        <p>📞 <a href="tel:+918889993092">+91 88899 93092</a></p>
+        <p class="phone">📞 +91 88899 93092</p>
         <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
