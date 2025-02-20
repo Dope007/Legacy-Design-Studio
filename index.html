@@ -9,69 +9,53 @@
 </head>
 <body>
 
-    <!-- Sticky Navigation -->
-    <header>
-        <div class="container">
-            <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="sticky-header">
+        <img src="logo.PNG" alt="Legacy Design Studio Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section with Glassmorphism -->
-    <section class="hero">
-        <img src="hero.PNG" alt="Interior Design">
-        <div class="hero-overlay">
-            <div class="hero-text">
-                <h1>Transform Your Space</h1>
-                <p>Luxury Interiors | Budget-Friendly Designs</p>
-                <a href="#contact" class="cta">Get Free Consultation</a>
-            </div>
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <h1 class="fade-in">Legacy Design Studio</h1>
+        <p class="fade-in">Experiential Designs at Budget-Friendly Costs</p>
+        <a href="#contact" class="btn">Get Free Consultation</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="fade-in">About Us</h2>
+        <p class="fade-in">Founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan, Legacy Design Studio delivers high-end interior designs at affordable prices. We bring creativity and functionality together.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="fade-in">Our Services</h2>
+        <div class="services-grid">
+            <div class="service fade-in">Modular Kitchens</div>
+            <div class="service fade-in">Modular Wardrobes</div>
+            <div class="service fade-in">Lighting</div>
+            <div class="service fade-in">Flooring</div>
+            <div class="service fade-in">Electrical Work</div>
+            <div class="service fade-in">Civil Work</div>
+            <div class="service fade-in">False Ceiling</div>
+            <div class="service fade-in">Wall Design & Painting</div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="services-list">
-            <div class="service">Modular Kitchens</div>
-            <div class="service">Modular Wardrobes</div>
-            <div class="service">Lighting & Flooring</div>
-            <div class="service">Electrical & Civil Work</div>
-            <div class="service">False Ceilings & Wall Painting</div>
-        </div>
+    <section id="contact" class="section contact">
+        <h2 class="fade-in">Contact Us</h2>
+        <p class="fade-in">For bookings and inquiries, call us at:</p>
+        <a href="tel:+918889993092" class="contact-number fade-in">+91 88899 93092</a>
     </section>
 
-    <!-- Statistics Section (Animated) -->
-    <section class="stats">
-        <div class="stat">
-            <span class="counter" data-count="150">0</span>
-            <p>Happy Clients</p>
-        </div>
-        <div class="stat">
-            <span class="counter" data-count="10">0</span>
-            <p>Years of Experience</p>
-        </div>
-    </section>
-
-    <!-- Contact Section with Modern Design -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Mumbai, India</p>
-        <p class="phone">📞 +91 88899 93092</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    <footer>
+        <p>&copy; 2025 Legacy Design Studio. All rights reserved.</p>
+    </footer>
 
 </body>
-</html> 
+</html>
