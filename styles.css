@@ -1,119 +1,47 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    scroll-behavior: smooth;
-}
-
+/* General Styling */
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    text-align: center;
-}
-
-/* Sticky Navigation */
-.sticky-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #222;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-.sticky-nav .logo {
-    width: 150px;
-    margin-left: 20px;
-}
-
-.sticky-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin-right: 20px;
-}
-
-.sticky-nav ul li {
-    margin: 0 20px;
-}
-
-.sticky-nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    background: black;
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+    margin: 0;
 }
 
-.sticky-nav ul li a:hover {
-    color: #ffcc00;
+/* Sticky Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Hero Section */
 .hero {
-    background: url('hero-bg.jpg') center/cover no-repeat;
-    height: 600px;
+    height: 100vh;
+    background: url('hero.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
 }
 
-.hero-content h1 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 1.4em;
-}
-
-/* Buttons */
-.btn {
-    background: #ffcc00;
-    color: black;
-    padding: 12px 25px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #ff9900;
-}
-
-/* Sections */
-.section {
-    padding: 80px 20px;
-}
-
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Services */
-.services-container {
+/* Contact Section */
+#contact form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
 }
 
-.service {
-    background: white;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+#contact input, #contact textarea {
+    margin: 10px 0;
+    padding: 10px;
 }
 
-.service h3 {
-    margin-bottom: 10px;
+/* Button */
+.btn {
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-/*
