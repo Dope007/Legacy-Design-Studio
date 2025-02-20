@@ -8,10 +8,10 @@ body {
     text-align: center;
 }
 
-/* Sticky Header (Perfectly Centered) */
+/* Sticky Header (Perfectly Centered & Responsive) */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Ensures everything stays centered */
     align-items: center;
     background: white;
     padding: 15px 5%;
@@ -22,14 +22,15 @@ header {
     z-index: 1000;
     border-bottom: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Ensures elements don’t overflow on small screens */
 }
 
-/* Logo (Slightly Smaller for Better Balance) */
+/* Logo (Slightly Smaller for Better Alignment) */
 header .logo img {
-    height: 40px;
+    height: 38px; /* Reduced for better balance */
 }
 
-/* Navigation (Centered) */
+/* Navigation (Properly Centered) */
 nav {
     display: flex;
     justify-content: center;
@@ -39,9 +40,10 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Ensures links don’t break on small screens */
 }
 
 nav ul li {
