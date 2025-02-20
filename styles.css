@@ -1,18 +1,19 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #f8f8f8;
+    color: #222;
 }
 
 /* Sticky Navigation */
 header {
     position: fixed;
     width: 100%;
-    background: #fff;
-    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -26,7 +27,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 160px;
 }
 
 nav ul {
@@ -38,99 +39,133 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #555;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     width: 100%;
+    height: 90vh;
+    overflow: hidden;
     text-align: center;
-    margin-top: 70px;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .hero-text h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
 }
 
-.hero-text .cta {
+.hero-text p {
+    font-size: 18px;
+    color: #eee;
+}
+
+.cta {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: black;
     color: white;
     text-decoration: none;
-    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #333;
 }
 
 /* Services Section */
 .services {
     text-align: center;
-    padding: 50px 20px;
-    background: #f9f9f9;
+    padding: 60px 20px;
+    background: #fff;
 }
 
 .services h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 .services-list {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .service {
     background: black;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-/* Stats Animation */
+/* Stats Section */
 .stats {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    background: #f1f1f1;
 }
 
 .stat {
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 .counter {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 /* Contact Section */
 #contact {
-    background: #f9f9f9;
+    background: #fff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .phone {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    color: black;
 }
 
 form {
@@ -138,21 +173,28 @@ form {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 input, textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
 button {
-    padding: 10px;
+    padding: 12px;
     background: black;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #333;
 }
