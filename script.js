@@ -1,33 +1,31 @@
-// Ensure page reloads at top
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
+$(document).ready(function () {
+    let counters = $(".counter");
+    let started = false;
 
-// Scroll-triggered animation for numbers
-const counters = document.querySelectorAll('.counter');
-let animationStarted = false;
+    $(window).scroll(function () {
+        let scrollTop = $(this).scrollTop();
+        let offsetTop = $(".stats").offset().top - 400;
 
-window.addEventListener('scroll', () => {
-    const statsSection = document.getElementById('stats');
-    const statsPosition = statsSection.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.5;
+        if (scrollTop > offsetTop && !started) {
+            started = true;
+            counters.each(function () {
+                let $this = $(this);
+                let countTo = $this.attr("data-count");
 
-    if (statsPosition < screenPosition && !animationStarted) {
-        animationStarted = true;
-        counters.forEach(counter => {
-            let target = +counter.getAttribute('data-target');
-            let count = 0;
-            let speed = Math.ceil(target / 100);
-
-            let updateCount = setInterval(() => {
-                count += speed;
-                if (count > target) {
-                    counter.innerText = target;
-                    clearInterval(updateCount);
-                } else {
-                    counter.innerText = count;
-                }
-            }, 20);
-        });
-    }
+                $({ countNum: 0 }).animate(
+                    { countNum: countTo },
+                    {
+                        duration: 2000,
+                        easing: "swing",
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                        },
+                    }
+                );
+            });
+        }
+    });
 });
