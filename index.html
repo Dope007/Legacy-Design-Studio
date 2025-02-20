@@ -8,7 +8,8 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
+
+    <!-- Sticky Navigation -->
     <header>
         <div class="container">
             <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
@@ -23,13 +24,15 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Glassmorphism -->
     <section class="hero">
         <img src="hero.PNG" alt="Interior Design">
-        <div class="hero-text">
-            <h1>Transform Your Space</h1>
-            <p>Experiential Designs | Budget-Friendly Luxury</p>
-            <a href="#contact" class="cta">Get Free Consultation</a>
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <h1>Transform Your Space</h1>
+                <p>Luxury Interiors | Budget-Friendly Designs</p>
+                <a href="#contact" class="cta">Get Free Consultation</a>
+            </div>
         </div>
     </section>
 
@@ -45,7 +48,7 @@
         </div>
     </section>
 
-    <!-- Statistics Section (Animation) -->
+    <!-- Statistics Section (Animated) -->
     <section class="stats">
         <div class="stat">
             <span class="counter" data-count="150">0</span>
@@ -57,17 +60,18 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Modern Design -->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Mumbai, India</p>
         <p class="phone">📞 +91 88899 93092</p>
         <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
+
 </body>
 </html>
