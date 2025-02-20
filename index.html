@@ -8,80 +8,47 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Sticky Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Legacy Design Studio</a>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Legacy Design Studio</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
+    <section id="home">
+        <div class="hero">
             <h1>Transform Your Space</h1>
             <p>Experiential Designs | Budget-Friendly Luxury</p>
-            <a href="#contact" class="btn">Get Free Consultation</a>
+            <button class="btn">Get Free Consultation</button>
         </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="services">
-        <h2>Our Expertise</h2>
-        <div class="service-cards">
-            <div class="card">
-                <img src="your-image-url" alt="Modular Kitchen">
-                <h3>Modular Kitchen</h3>
-            </div>
-            <div class="card">
-                <img src="your-image-url" alt="Wardrobes">
-                <h3>Modular Wardrobes</h3>
-            </div>
-            <div class="card">
-                <img src="your-image-url" alt="Lighting">
-                <h3>Lighting & Decor</h3>
-            </div>
+    <section id="stats">
+        <div class="stat">
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+            <h2 class="counter" data-target="10">0</h2>
+            <p>Years of Experience</p>
         </div>
     </section>
 
-    <!-- Number Animation -->
-    <section id="stats" class="stats">
-        <h2>Our Achievements</h2>
-        <div class="stats-container">
-            <div class="stat">
-                <span class="count" data-target="200">0</span>
-                <p>Projects Completed</p>
-            </div>
-            <div class="stat">
-                <span class="count" data-target="150">0</span>
-                <p>Happy Clients</p>
-            </div>
-            <div class="stat">
-                <span class="count" data-target="10">0</span>
-                <p>Years of Experience</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
         <p>Mumbai, India</p>
         <p>📞 <a href="tel:+918889993092">+91 88899 93092</a></p>
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
-
 </body>
 </html>
