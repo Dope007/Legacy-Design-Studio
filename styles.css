@@ -8,6 +8,11 @@ body {
     text-align: center;
 }
 
+/* Enable Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Sticky Header (Perfectly Centered & Responsive) */
 header {
     display: flex;
