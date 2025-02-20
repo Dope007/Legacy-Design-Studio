@@ -1,99 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    background: white;
+    color: black;
+    text-align: center;
 }
 
-body {
-    background-color: #fff;
-    color: #222;
-    scroll-behavior: smooth;
-}
-
+/* Sticky Header */
 .sticky-header {
     position: fixed;
-    width: 100%;
     top: 0;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 15px 30px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    height: 40px;
-}
-
-nav a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: #222;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #c89b5b;
-}
-
-.hero {
-    background: url('hero.PNG') center/cover no-repeat;
-    height: 100vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
-.hero .overlay {
-    position: absolute;
+.sticky-header img {
+    height: 50px;
+}
+
+.sticky-header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.sticky-header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero img {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    object-fit: cover;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-}
-
-.about, .services, .portfolio, .contact {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 30px;
-}
-
-.stat h3 {
-    font-size: 2.5rem;
-    color: #c89b5b;
-}
-
-.portfolio-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.portfolio-gallery img {
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.glassmorphism {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
     border-radius: 10px;
 }
 
-.contact form {
-    max-width: 500px;
-    margin: auto;
+.hero h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #eee;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background: #333;
+}
+
+/* Sections */
+.content {
+    padding: 60px 20px;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.carousel img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: black;
+    color: white;
 }
