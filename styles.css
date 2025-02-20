@@ -1,37 +1,74 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Navigation Bar */
+nav {
+    background: #222;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
 }
-header {
-    background: black;
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover, .active {
+    color: #ffcc00;
+}
+
+/* Sections */
+.content, .vision, .why-choose-us {
+    width: 85%;
+    margin: 20px auto;
+    background: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
-nav a {
-    margin: 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+
+.content:hover, .vision:hover, .why-choose-us:hover {
+    transform: scale(1.02);
 }
-.hero {
-    padding: 50px;
-    background: url('images/design.jpg') no-repeat center center/cover;
-    color: white;
-}
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: gold;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
+
+/* Footer */
 footer {
-    background: black;
+    background: #111;
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
