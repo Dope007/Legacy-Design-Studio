@@ -5,88 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <header class="hero">
-        <nav>
-            <div class="logo">Legacy Design Studio</div>
-            <ul>
-                <li><a href="#about">About</a></li>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Legacy Design Studio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-        <div class="hero-text">
-            <h1>Transform Your Space with Elegance</h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Transform Your Space</h1>
             <p>Experiential Designs | Budget-Friendly Luxury</p>
             <a href="#contact" class="btn">Get Free Consultation</a>
         </div>
-    </header>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We specialize in delivering luxury interiors at affordable prices. From concept to execution, we bring your vision to life.</p>
-        </div>
     </section>
 
-    <section id="services" class="section">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-box">
-                    <h3>Modular Kitchens</h3>
-                    <p>Modern, space-saving, and highly functional kitchen designs.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Wardrobes & Storage</h3>
-                    <p>Custom-designed storage solutions for smart living.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Lighting & Ambience</h3>
-                    <p>Perfect lighting solutions to enhance your space.</p>
-                </div>
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>Our Expertise</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="your-image-url" alt="Modular Kitchen">
+                <h3>Modular Kitchen</h3>
+            </div>
+            <div class="card">
+                <img src="your-image-url" alt="Wardrobes">
+                <h3>Modular Wardrobes</h3>
+            </div>
+            <div class="card">
+                <img src="your-image-url" alt="Lighting">
+                <h3>Lighting & Decor</h3>
             </div>
         </div>
     </section>
 
-    <section class="numbers">
-        <div class="container">
+    <!-- Number Animation -->
+    <section id="stats" class="stats">
+        <h2>Our Achievements</h2>
+        <div class="stats-container">
             <div class="stat">
-                <h2><span class="counter" data-target="200">0</span>+</h2>
+                <span class="count" data-target="200">0</span>
                 <p>Projects Completed</p>
             </div>
             <div class="stat">
-                <h2><span class="counter" data-target="150">0</span>+</h2>
+                <span class="count" data-target="150">0</span>
                 <p>Happy Clients</p>
             </div>
             <div class="stat">
-                <h2><span class="counter" data-target="10">0</span>+</h2>
+                <span class="count" data-target="10">0</span>
                 <p>Years of Experience</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p><strong>Location:</strong> Mumbai, India</p>
-            <p><strong>Phone:</strong> <a href="tel:+918889993092">+91 88899 93092</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@legacydesignstudio.com">info@legacydesignstudio.com</a></p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Mumbai, India</p>
+        <p>📞 <a href="tel:+918889993092">+91 88899 93092</a></p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
-    <footer>
-        <p>© 2025 Legacy Design Studio | Designed for Perfection</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
