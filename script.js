@@ -1,13 +1,27 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const fadeElements = document.querySelectorAll(".fade-in");
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".counter");
+    const options = { threshold: 0.6 };
 
-    const observer = new IntersectionObserver(entries => {
+    const animateCounter = (entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
+                let target = +entry.target.getAttribute("data-target");
+                let count = 0;
+                let speed = 20;
+                let updateCounter = () => {
+                    if (count < target) {
+                        count += Math.ceil(target / 100);
+                        entry.target.innerText = count;
+                        setTimeout(updateCounter, speed);
+                    } else {
+                        entry.target.innerText = target;
+                    }
+                };
+                updateCounter();
             }
         });
-    });
+    };
 
-    fadeElements.forEach(el => observer.observe(el));
+    const observer = new IntersectionObserver(animateCounter, options);
+    counters.forEach(counter => observer.observe(counter));
 });
