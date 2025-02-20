@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- Sticky Header -->
     <header class="sticky-header">
-        <img src="logo.PNG" alt="Legacy Design Studio Logo" class="logo">
+        <div class="logo">
+            <img src="logo.PNG" alt="Legacy Design Studio">
+        </div>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -19,75 +23,55 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Luxury Meets Functionality</h1>
-            <p>Redefining Interiors with Elegance & Innovation</p>
-            <a href="#contact" class="btn">Book a Consultation</a>
+        <div class="hero-overlay"></div>
+        <img src="hero.PNG" alt="Luxury Interior">
+        <div class="hero-text glassmorphism">
+            <h1>Legacy Design Studio</h1>
+            <p>Creating Luxury Interiors at Affordable Prices</p>
+            <a href="#contact" class="cta">Get Free Quotation</a>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- About Section -->
+    <section id="about" class="content">
         <h2>About Us</h2>
-        <p>At Legacy Design Studio, we craft spaces that blend luxury, comfort, and sophistication. With a decade of expertise, our team transforms visions into reality, delivering personalized, high-end interiors at affordable prices.</p>
-
-        <div class="stats">
-            <div class="stat">
-                <h3><span class="counter" data-target="10">0</span>+</h3>
-                <p>Years of Excellence</p>
-            </div>
-            <div class="stat">
-                <h3><span class="counter" data-target="750">0</span>+</h3>
-                <p>Successful Projects</p>
-            </div>
-            <div class="stat">
-                <h3><span class="counter" data-target="500">0</span>+</h3>
-                <p>Satisfied Clients</p>
-            </div>
-        </div>
+        <p>Founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan, we bring elegant designs that blend modern aesthetics with functionality.</p>
     </section>
 
-    <section id="services" class="services">
+    <!-- Services Section -->
+    <section id="services" class="content">
         <h2>Our Services</h2>
-        <p>From concept to completion, we provide world-class design services tailored to your needs.</p>
-        <div class="service-list">
-            <div class="service">Custom Home Interiors</div>
-            <div class="service">Luxury Modular Kitchens</div>
-            <div class="service">Smart Home Automation</div>
-            <div class="service">Designer Furniture & Décor</div>
-            <div class="service">Lighting & Ambience Planning</div>
-            <div class="service">3D Visualization & Rendering</div>
-            <div class="service">Commercial & Office Interiors</div>
-            <div class="service">Sustainable & Eco-Friendly Designs</div>
+        <ul>
+            <li>Modular Kitchens</li>
+            <li>Modular Wardrobes</li>
+            <li>Lighting & Flooring</li>
+            <li>Electrical & Civil Work</li>
+            <li>False Ceilings & Wall Designs</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section with Carousel -->
+    <section id="portfolio" class="content">
+        <h2>Our Work</h2>
+        <div class="carousel">
+            <img src="portfolio1.jpg" alt="Project 1">
+            <img src="portfolio2.jpg" alt="Project 2">
+            <img src="portfolio3.jpg" alt="Project 3">
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
-        <h2>Our Portfolio</h2>
-        <p>Take a glimpse at some of our finest interior transformations.</p>
-        <div class="portfolio-gallery">
-            <img src="portfolio1.jpg" alt="Luxury Living Room">
-            <img src="portfolio2.jpg" alt="Modern Kitchen Design">
-            <img src="portfolio3.jpg" alt="Elegant Bedroom Interiors">
-            <img src="portfolio4.jpg" alt="Stylish Office Space">
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Let's Create Something Extraordinary</h2>
-        <p>Get in touch to discuss your dream interior.</p>
-        <p><strong>Call us at:</strong> <a href="tel:+918889993092">+91 88899 93092</a></p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <!-- Contact Section -->
+    <section id="contact" class="content contact-section">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for your dream interior project.</p>
+        <a href="tel:+918889993092" class="cta">Call: +91 88899 93092</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 Legacy Design Studio. Excellence in Every Detail.</p>
+        <p>&copy; 2025 Legacy Design Studio</p>
     </footer>
+
 </body>
 </html>
