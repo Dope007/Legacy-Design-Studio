@@ -1,47 +1,100 @@
-/* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: black;
-    color: white;
     margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
 }
 
-/* Sticky Header */
-header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Hero Section */
 .hero {
+    background: url('YOUR_IMAGE_URL') no-repeat center center/cover;
     height: 100vh;
-    background: url('hero.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-/* Contact Section */
-#contact form {
+nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
 
-#contact input, #contact textarea {
-    margin: 10px 0;
-    padding: 10px;
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-/* Button */
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: gold;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
 .btn {
     background: gold;
-    color: black;
     padding: 10px 20px;
     text-decoration: none;
+    color: black;
     font-weight: bold;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.numbers {
+    background: #111;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background: black;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    color: black;
+    cursor: pointer;
 }
