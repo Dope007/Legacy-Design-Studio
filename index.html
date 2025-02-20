@@ -9,68 +9,81 @@
 </head>
 <body>
 
-    <!-- Sticky Header -->
-    <header class="sticky-header">
+    <!-- Sticky Navbar -->
+    <header>
         <div class="logo">
             <img src="logo.PNG" alt="Legacy Design Studio">
         </div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Our Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
-        <img src="hero.PNG" alt="Luxury Interior">
-        <div class="hero-text glassmorphism">
+        <div class="hero-text">
             <h1>Legacy Design Studio</h1>
-            <p>Creating Luxury Interiors at Affordable Prices</p>
-            <a href="#contact" class="cta">Get Free Quotation</a>
+            <p>Experiential Designs at Budget-Friendly Costs</p>
+            <a href="#contact" class="cta">Get Free Consultation</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="content">
+    <section id="about" class="about">
         <h2>About Us</h2>
-        <p>Founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan, we bring elegant designs that blend modern aesthetics with functionality.</p>
+        <p>Legacy Design Studio is founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan. We specialize in creating experiential interior designs that are elegant, modern, and budget-friendly.</p>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="content">
+    <section id="services" class="services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Modular Kitchens</li>
-            <li>Modular Wardrobes</li>
-            <li>Lighting & Flooring</li>
-            <li>Electrical & Civil Work</li>
-            <li>False Ceilings & Wall Designs</li>
-        </ul>
+        <div class="service-list">
+            <div class="service">
+                <h3>Modular Kitchens</h3>
+                <p>Custom-designed modular kitchens with premium finishes.</p>
+            </div>
+            <div class="service">
+                <h3>Wardrobes & Storage</h3>
+                <p>Maximize space with our modular wardrobe solutions.</p>
+            </div>
+            <div class="service">
+                <h3>Lighting & Flooring</h3>
+                <p>Enhance ambiance with the perfect lighting and flooring choices.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Portfolio Section with Carousel -->
-    <section id="portfolio" class="content">
+    <section id="portfolio" class="portfolio">
         <h2>Our Work</h2>
         <div class="carousel">
-            <img src="portfolio1.jpg" alt="Project 1">
-            <img src="portfolio2.jpg" alt="Project 2">
-            <img src="portfolio3.jpg" alt="Project 3">
+            <div class="carousel-track">
+                <img src="project1.jpg" alt="Project 1">
+                <img src="project2.jpg" alt="Project 2">
+                <img src="project3.jpg" alt="Project 3">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content contact-section">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Get in touch with us for your dream interior project.</p>
-        <a href="tel:+918889993092" class="cta">Call: +91 88899 93092</a>
+        <p>Call us at <a href="tel:+918889993092">+91 88899 93092</a></p>
+        <p>Email: info@legacydesignstudio.com</p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Legacy Design Studio</p>
+        <p>&copy; 2025 Legacy Design Studio. All rights reserved.</p>
     </footer>
 
 </body>
