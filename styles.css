@@ -1,37 +1,38 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Sticky Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
-    background: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: auto;
 }
 
 .logo {
-    height: 50px;
+    width: 150px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -40,11 +41,12 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
+    width: 100%;
     text-align: center;
-    color: white;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .hero img {
@@ -57,81 +59,100 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.cta-button {
-    background: yellow;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.services-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.service {
-    background: #f4f4f4;
-    padding: 15px;
-    margin: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
     border-radius: 5px;
 }
 
+.hero-text h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.hero-text .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Stats Animation */
 .stats {
     display: flex;
     justify-content: center;
-    padding: 50px 0;
-    background: #f4f4f4;
-    margin-top: 20px;
+    text-align: center;
+    padding: 50px 20px;
 }
 
 .stat {
-    text-align: center;
-    margin: 0 30px;
-    font-size: 24px;
-    font-weight: bold;
+    margin: 0 20px;
 }
 
 .counter {
-    font-size: 40px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
+/* Contact Section */
 #contact {
+    background: #f9f9f9;
     text-align: center;
-    padding: 50px 0;
-    background: white;
+    padding: 50px 20px;
 }
 
-#contact .phone {
-    font-size: 20px;
+.phone {
+    font-size: 18px;
     font-weight: bold;
 }
 
 form {
+    max-width: 400px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
 }
 
-form input, form textarea {
-    width: 80%;
-    max-width: 400px;
+input, textarea {
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-form button {
+button {
+    padding: 10px;
     background: black;
     color: white;
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
