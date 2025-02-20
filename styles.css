@@ -8,10 +8,10 @@ body {
     text-align: center;
 }
 
-/* Sticky Header (Centered Fix) */
+/* Sticky Header (Perfectly Centered) */
 header {
     display: flex;
-    justify-content: center; /* Ensures everything stays centered */
+    justify-content: center;
     align-items: center;
     background: white;
     padding: 15px 5%;
@@ -24,7 +24,7 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo (Slightly Smaller) */
+/* Logo (Slightly Smaller for Better Balance) */
 header .logo img {
     height: 40px;
 }
@@ -53,14 +53,6 @@ nav ul li a {
     color: black;
     font-weight: bold;
     font-size: 16px;
-}
-
-/* Contact Section (Fully Centered & Responsive) */
-.contact {
-    padding: 50px 5%;
-    text-align: center;
-    max-width: 1200px;
-    margin: auto;
 }
 
 /* Hero Section */
@@ -145,7 +137,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Ensures proper layout on small screens */
+    flex-wrap: wrap;
 }
 
 .service {
@@ -153,7 +145,8 @@ nav ul li a {
     padding: 30px;
     border-radius: 8px;
     width: 30%;
-    min-width: 250px; /* Prevents shrinking too much on phones */
+    min-width: 250px;
+    text-align: center;
 }
 
 /* Portfolio Carousel */
@@ -187,9 +180,12 @@ nav ul li a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Contact Us */
+/* Contact Us (Now Fully Responsive & Centered) */
 .contact {
     padding: 50px 10%;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .contact a {
