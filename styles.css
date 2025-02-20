@@ -206,7 +206,7 @@ footer {
     color: white;
 }
 
-/* ✅ Mobile-Friendly Fixes */
+/* Mobile Fixes */
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
@@ -220,7 +220,7 @@ footer {
         text-align: center;
     }
 
-    .service {
-        width: 100%;
+    .contact {
+        padding: 50px 10%;
     }
 }
