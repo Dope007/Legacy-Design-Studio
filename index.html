@@ -5,74 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <header>
-        <img src="logo.PNG" alt="Legacy Design Studio Logo" class="logo">
-        <h1>Legacy Design Studio</h1>
-        <p>Experiential Designs at Budget-Friendly Costs</p>
-    </header>
-
-    <nav>
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav">
+        <div class="logo-container">
+            <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
+        </div>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Transform Your Space with Style</h2>
-            <p>Luxury Interiors Made Affordable</p>
-            <a href="contact.html" class="btn">Get Free Quotation</a>
+            <h1>Legacy Design Studio</h1>
+            <p>Experiential Designs at Budget-Friendly Costs</p>
+            <a href="#contact" class="btn">Get Free Quotation</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
+    <!-- About Us -->
+    <section id="about" class="section">
         <h2>About Us</h2>
-        <p>Founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan, we specialize in modern and budget-friendly interior designs that blend elegance with functionality.</p>
+        <p>Founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan, we specialize in modern, budget-friendly interior designs that blend elegance with functionality.</p>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose">
-        <h2>Why Choose Us?</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Affordable Luxury</h3>
-                <p>High-end designs without breaking the bank.</p>
+    <!-- Services -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Modular Kitchens</h3>
+                <p>Customized kitchen designs that maximize space and elegance.</p>
             </div>
-            <div class="feature">
-                <h3>Customized Solutions</h3>
-                <p>Tailored interiors that fit your vision and space.</p>
+            <div class="service">
+                <h3>Wardrobes & Storage</h3>
+                <p>Space-efficient storage solutions with stylish designs.</p>
             </div>
-            <div class="feature">
-                <h3>Experienced Team</h3>
-                <p>Years of expertise in modern interior trends.</p>
+            <div class="service">
+                <h3>Lighting & Ambience</h3>
+                <p>Modern lighting solutions to enhance aesthetics.</p>
             </div>
-            <div class="feature">
-                <h3>Timely Execution</h3>
-                <p>We deliver projects on schedule with perfection.</p>
+            <div class="service">
+                <h3>Wall Painting & Décor</h3>
+                <p>Premium wall finishes and artistic decor solutions.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Services Overview -->
-    <section class="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>✅ Modular Kitchens</li>
-            <li>✅ Wardrobes & Storage</li>
-            <li>✅ Lighting & Ambience</li>
-            <li>✅ Flooring & Tiling</li>
-            <li>✅ Wall Painting & Décor</li>
-            <li>✅ False Ceiling & Electrical Work</li>
-        </ul>
-        <a href="services.html" class="btn">Explore Services</a>
     </section>
 
     <!-- Testimonials -->
@@ -89,14 +74,14 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
-        <h2>Let's Design Your Dream Space</h2>
-        <p>Get in touch with us today for a **free consultation**.</p>
-        <a href="contact.html" class="btn">Contact Us</a>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Call us at <a href="tel:+918889993092">+91 88899 93092</a> or request a free consultation.</p>
+        <a href="#home" class="btn">Back to Top</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 Legacy Design Studio | Call: <a href="tel:+918889993092">+91 88899 93092</a></p>
+        <p>&copy; 2025 Legacy Design Studio | Designed for perfection</p>
     </footer>
 
 </body>
