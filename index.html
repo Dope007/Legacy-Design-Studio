@@ -5,104 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Sticky Navigation -->
-    <header>
-        <div class="container">
-            <img src="logo.PNG" alt="Legacy Design Studio Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Transform Your Space with <span>Legacy Design Studio</span></h1>
+    <header class="hero">
+        <nav>
+            <div class="logo">Legacy Design Studio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Transform Your Space with Elegance</h1>
             <p>Experiential Designs | Budget-Friendly Luxury</p>
             <a href="#contact" class="btn">Get Free Consultation</a>
         </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Us</h2>
-            <p>Founded by <strong>Pranav Chavan, Sunil Chavan, and Samiksha Chavan</strong>, we create luxury interiors that are stylish, functional, and affordable. With years of experience, we design dream spaces with a perfect balance of aesthetics and comfort.</p>
+            <p>We specialize in delivering luxury interiors at affordable prices. From concept to execution, we bring your vision to life.</p>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="section">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
+            <div class="service-grid">
+                <div class="service-box">
                     <h3>Modular Kitchens</h3>
-                    <p>Custom-designed, space-saving, and elegant kitchens.</p>
+                    <p>Modern, space-saving, and highly functional kitchen designs.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-box">
                     <h3>Wardrobes & Storage</h3>
-                    <p>Modern, space-efficient, and stylish wardrobe solutions.</p>
+                    <p>Custom-designed storage solutions for smart living.</p>
                 </div>
-                <div class="service-item">
-                    <h3>Lighting & Decor</h3>
-                    <p>Premium lighting and decor ideas to elevate your home.</p>
-                </div>
-                <div class="service-item">
-                    <h3>False Ceilings & Walls</h3>
-                    <p>Creative wall designs and ceilings that enhance interiors.</p>
+                <div class="service-box">
+                    <h3>Lighting & Ambience</h3>
+                    <p>Perfect lighting solutions to enhance your space.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Animated Numbers Section -->
-    <section class="stats">
+    <section class="numbers">
         <div class="container">
-            <div class="stat-item">
-                <span class="counter" data-target="500">0</span>
+            <div class="stat">
+                <h2><span class="counter" data-target="200">0</span>+</h2>
                 <p>Projects Completed</p>
             </div>
-            <div class="stat-item">
-                <span class="counter" data-target="300">0</span>
+            <div class="stat">
+                <h2><span class="counter" data-target="150">0</span>+</h2>
                 <p>Happy Clients</p>
             </div>
-            <div class="stat-item">
-                <span class="counter" data-target="10">0</span>
+            <div class="stat">
+                <h2><span class="counter" data-target="10">0</span>+</h2>
                 <p>Years of Experience</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>📍 Mumbai, India</p>
-            <p>📞 <a href="tel:+918889993092">+91 88899 93092</a></p>
-            <p>📧 <a href="mailto:info@legacydesignstudio.com">info@legacydesignstudio.com</a></p>
+            <p><strong>Location:</strong> Mumbai, India</p>
+            <p><strong>Phone:</strong> <a href="tel:+918889993092">+91 88899 93092</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@legacydesignstudio.com">info@legacydesignstudio.com</a></p>
             <form>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Legacy Design Studio | Designed for Perfection</p>
+        <p>© 2025 Legacy Design Studio | Designed for Perfection</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
