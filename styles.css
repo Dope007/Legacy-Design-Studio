@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: white;
     color: black;
+    text-align: center;
 }
 
 /* Sticky Header */
@@ -13,26 +14,32 @@ header {
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 10px 5%;
+    padding: 15px 5%;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a premium look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Smaller Logo */
+/* Logo */
 header .logo img {
-    height: 45px; /* Reduced from 50px */
+    height: 40px; /* Slightly smaller for better alignment */
 }
 
-/* Navigation Menu */
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav ul li a {
@@ -40,21 +47,6 @@ nav ul li a {
     color: black;
     font-weight: bold;
     font-size: 16px;
-}
-
-/* Fix for Navigation Links Overflowing */
-@media (max-width: 1024px) {
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
 }
 
 /* Hero Section */
@@ -65,6 +57,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .hero-overlay {
@@ -82,23 +75,16 @@ nav ul li a {
     border-radius: 10px;
     text-align: center;
     color: white;
+    width: 80%;
+    max-width: 600px;
 }
 
-.hero-text h1 {
-    font-size: 36px;
-}
-
-.hero-text p {
-    font-size: 18px;
-}
-
-/* About Us Section */
+/* About Us */
 .about {
-    padding: 80px 10%; /* Adds more space on the sides */
-    text-align: center;
+    padding: 80px 10%;
     background: #f9f9f9;
-    max-width: 1200px; /* Keeps content within bounds */
-    margin: auto; /* Centers it */
+    max-width: 1200px;
+    margin: auto;
 }
 
 .about h2 {
@@ -114,8 +100,7 @@ nav ul li a {
 
 /* Services */
 .services {
-    padding: 70px;
-    text-align: center;
+    padding: 70px 10%;
     background: white;
 }
 
@@ -123,6 +108,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap; /* Ensures proper layout on small screens */
 }
 
 .service {
@@ -130,6 +116,7 @@ nav ul li a {
     padding: 30px;
     border-radius: 8px;
     width: 30%;
+    min-width: 250px; /* Prevents shrinking too much on phones */
 }
 
 /* Portfolio Carousel */
@@ -163,10 +150,9 @@ nav ul li a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Contact */
+/* Contact Us */
 .contact {
-    padding: 50px;
-    text-align: center;
+    padding: 50px 10%;
 }
 
 .contact a {
@@ -181,4 +167,23 @@ footer {
     padding: 20px;
     background: black;
     color: white;
+}
+
+/* ✅ Mobile-Friendly Fixes */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .service {
+        width: 100%;
+    }
 }
