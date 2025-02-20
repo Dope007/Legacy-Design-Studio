@@ -1,27 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const counters = document.querySelectorAll(".counter");
-    const options = { threshold: 0.6 };
-
-    const animateCounter = (entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                let target = +entry.target.getAttribute("data-target");
-                let count = 0;
-                let speed = 20;
-                let updateCounter = () => {
-                    if (count < target) {
-                        count += Math.ceil(target / 100);
-                        entry.target.innerText = count;
-                        setTimeout(updateCounter, speed);
-                    } else {
-                        entry.target.innerText = target;
-                    }
-                };
-                updateCounter();
-            }
-        });
-    };
-
-    const observer = new IntersectionObserver(animateCounter, options);
-    counters.forEach(counter => observer.observe(counter));
+// Smooth Scroll
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
 });
+
+// Carousel Animation
+let index = 0;
+const slides = document.querySelectorAll('.carousel img');
+
+function showSlide() {
+    slides.forEach((img, i) => {
+        img.style.display = i === index ? "block" : "none";
+    });
+    index = (index + 1) % slides.length;
+}
+
+setInterval(showSlide, 3000);
+showSlide();
