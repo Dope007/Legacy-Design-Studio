@@ -8,15 +8,10 @@ body {
     text-align: center;
 }
 
-/* Enable Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Sticky Header (Perfectly Centered & Responsive) */
+/* Sticky Header */
 header {
     display: flex;
-    justify-content: center; /* Ensures everything stays centered */
+    justify-content: center;
     align-items: center;
     background: white;
     padding: 15px 5%;
@@ -27,15 +22,13 @@ header {
     z-index: 1000;
     border-bottom: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; /* Ensures elements don’t overflow on small screens */
 }
 
-/* Logo (Slightly Smaller for Better Alignment) */
 header .logo img {
-    height: 38px; /* Reduced for better balance */
+    height: 40px;
 }
 
-/* Navigation (Properly Centered) */
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -45,10 +38,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Ensures links don’t break on small screens */
 }
 
 nav ul li {
@@ -88,72 +80,18 @@ nav ul li a {
     border-radius: 10px;
     text-align: center;
     color: white;
-    width: 80%;
-    max-width: 600px;
 }
 
-/* "Get Free Consultation" Button with Glowing Effect */
-.consultation-btn {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background: black;
-    border-radius: 8px;
-    text-decoration: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease-in-out;
+/* Glowing Button Effect */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+    50% { box-shadow: 0 0 25px rgba(255, 255, 255, 1); }
+    100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
 }
 
-.consultation-btn:hover {
-    background: #222;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-}
-
-.consultation-btn:active {
-    box-shadow: 0 0 25px rgba(255, 255, 255, 1);
-}
-
-/* About Us */
-.about {
-    padding: 80px 10%;
-    background: #f9f9f9;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.about h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.about p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Services */
-.services {
-    padding: 70px 10%;
-    background: white;
-}
-
-.service-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.service {
-    background: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
-    width: 30%;
-    min-width: 250px;
-    text-align: center;
+/* Glowing Effect */
+.consultation-btn.glow-effect {
+    animation: glow 2s ease-in-out;
 }
 
 /* Portfolio Carousel */
@@ -187,26 +125,9 @@ nav ul li a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Contact Us (Now Fully Responsive & Centered) */
+/* Contact Us */
 .contact {
     padding: 50px 10%;
-    text-align: center;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.contact a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: white;
 }
 
 /* Mobile Fixes */
@@ -220,7 +141,6 @@ footer {
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
-        text-align: center;
     }
 
     .contact {
