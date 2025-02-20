@@ -13,29 +13,48 @@ header {
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 10px 20px;
+    padding: 10px 5%;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a premium look */
 }
 
+/* Smaller Logo */
 header .logo img {
-    height: 50px;
+    height: 45px; /* Reduced from 50px */
 }
 
+/* Navigation Menu */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 16px;
+}
+
+/* Fix for Navigation Links Overflowing */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 }
 
 /* Hero Section */
@@ -71,6 +90,26 @@ nav ul li a {
 
 .hero-text p {
     font-size: 18px;
+}
+
+/* About Us Section */
+.about {
+    padding: 80px 10%; /* Adds more space on the sides */
+    text-align: center;
+    background: #f9f9f9;
+    max-width: 1200px; /* Keeps content within bounds */
+    margin: auto; /* Centers it */
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Services */
