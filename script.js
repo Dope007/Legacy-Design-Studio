@@ -1,16 +1,25 @@
-const counters = document.querySelectorAll('.counter');
-counters.forEach(counter => {
-    counter.innerText = '0';
-    const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const current = +counter.innerText;
-        const increment = target / 100;
-        if (current < target) {
-            counter.innerText = `${Math.ceil(current + increment)}`;
-            setTimeout(updateCounter, 20);
-        } else {
-            counter.innerText = target;
-        }
-    };
-    updateCounter();
+document.addEventListener("scroll", function () {
+    const stats = document.querySelector("#stats");
+    const counters = document.querySelectorAll(".count");
+    let scrolledIntoView = stats.getBoundingClientRect().top < window.innerHeight;
+
+    if (scrolledIntoView) {
+        counters.forEach(counter => {
+            let target = +counter.getAttribute("data-target");
+            let count = 0;
+            let increment = target / 200;
+
+            let updateCount = () => {
+                if (count < target) {
+                    count += increment;
+                    counter.innerText = Math.floor(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            updateCount();
+        });
+    }
 });
