@@ -8,54 +8,86 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-
     <header class="sticky-header">
         <img src="logo.PNG" alt="Legacy Design Studio Logo" class="logo">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="overlay"></div>
-        <h1 class="fade-in">Legacy Design Studio</h1>
-        <p class="fade-in">Experiential Designs at Budget-Friendly Costs</p>
-        <a href="#contact" class="btn">Get Free Consultation</a>
-    </section>
-
-    <section id="about" class="section">
-        <h2 class="fade-in">About Us</h2>
-        <p class="fade-in">Founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan, Legacy Design Studio delivers high-end interior designs at affordable prices. We bring creativity and functionality together.</p>
-    </section>
-
-    <section id="services" class="section">
-        <h2 class="fade-in">Our Services</h2>
-        <div class="services-grid">
-            <div class="service fade-in">Modular Kitchens</div>
-            <div class="service fade-in">Modular Wardrobes</div>
-            <div class="service fade-in">Lighting</div>
-            <div class="service fade-in">Flooring</div>
-            <div class="service fade-in">Electrical Work</div>
-            <div class="service fade-in">Civil Work</div>
-            <div class="service fade-in">False Ceiling</div>
-            <div class="service fade-in">Wall Design & Painting</div>
+        <div class="hero-content">
+            <h1>Luxury Meets Functionality</h1>
+            <p>Redefining Interiors with Elegance & Innovation</p>
+            <a href="#contact" class="btn">Book a Consultation</a>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
-        <h2 class="fade-in">Contact Us</h2>
-        <p class="fade-in">For bookings and inquiries, call us at:</p>
-        <a href="tel:+918889993092" class="contact-number fade-in">+91 88899 93092</a>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At **Legacy Design Studio**, we craft spaces that blend luxury, comfort, and sophistication. With a decade of expertise, our team transforms visions into reality, delivering personalized, high-end interiors at **affordable prices**.</p>
+
+        <div class="stats">
+            <div class="stat">
+                <h3><span class="counter" data-target="10">0</span>+</h3>
+                <p>Years of Excellence</p>
+            </div>
+            <div class="stat">
+                <h3><span class="counter" data-target="750">0</span>+</h3>
+                <p>Successful Projects</p>
+            </div>
+            <div class="stat">
+                <h3><span class="counter" data-target="500">0</span>+</h3>
+                <p>Satisfied Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>From concept to completion, we provide world-class design services tailored to your needs.</p>
+        <div class="service-list">
+            <div class="service">Custom Home Interiors</div>
+            <div class="service">Luxury Modular Kitchens</div>
+            <div class="service">Smart Home Automation</div>
+            <div class="service">Designer Furniture & Décor</div>
+            <div class="service">Lighting & Ambience Planning</div>
+            <div class="service">3D Visualization & Rendering</div>
+            <div class="service">Commercial & Office Interiors</div>
+            <div class="service">Sustainable & Eco-Friendly Designs</div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Take a glimpse at some of our finest interior transformations.</p>
+        <div class="portfolio-gallery">
+            <img src="portfolio1.jpg" alt="Luxury Living Room">
+            <img src="portfolio2.jpg" alt="Modern Kitchen Design">
+            <img src="portfolio3.jpg" alt="Elegant Bedroom Interiors">
+            <img src="portfolio4.jpg" alt="Stylish Office Space">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Create Something Extraordinary</h2>
+        <p>Get in touch to discuss your dream interior.</p>
+        <p><strong>Call us at:</strong> <a href="tel:+918889993092">+91 88899 93092</a></p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Legacy Design Studio. All rights reserved.</p>
+        <p>&copy; 2025 Legacy Design Studio. Excellence in Every Detail.</p>
     </footer>
-
 </body>
 </html>
