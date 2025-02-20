@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Sticky Header -->
+    <!-- Navigation -->
     <header>
         <div class="container">
             <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -25,19 +24,19 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <img src="hero.PNG" alt="Transform Your Space">
+    <section class="hero">
+        <img src="hero.PNG" alt="Interior Design">
         <div class="hero-text">
             <h1>Transform Your Space</h1>
             <p>Experiential Designs | Budget-Friendly Luxury</p>
-            <a href="#contact" class="cta-button">Get Free Consultation</a>
+            <a href="#contact" class="cta">Get Free Consultation</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="services">
         <h2>Our Services</h2>
-        <div class="services-container">
+        <div class="services-list">
             <div class="service">Modular Kitchens</div>
             <div class="service">Modular Wardrobes</div>
             <div class="service">Lighting & Flooring</div>
@@ -46,10 +45,10 @@
         </div>
     </section>
 
-    <!-- Experience & Clients Animation -->
+    <!-- Statistics Section (Animation) -->
     <section class="stats">
         <div class="stat">
-            <span class="counter" data-count="100">0</span>
+            <span class="counter" data-count="150">0</span>
             <p>Happy Clients</p>
         </div>
         <div class="stat">
@@ -64,14 +63,11 @@
         <p>Mumbai, India</p>
         <p class="phone">📞 +91 88899 93092</p>
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
-
-    <script src="script.js"></script>
-
 </body>
 </html>
