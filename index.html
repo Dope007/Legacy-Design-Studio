@@ -10,75 +10,94 @@
 <body>
 
     <!-- Sticky Navigation -->
-    <nav class="sticky-nav">
-        <div class="logo-container">
-            <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
+    <header>
+        <div class="container">
+            <img src="logo.PNG" alt="Legacy Design Studio Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Legacy Design Studio</h1>
-            <p>Experiential Designs at Budget-Friendly Costs</p>
+            <h1>Transform Your Space with <span>Legacy Design Studio</span></h1>
+            <p>Experiential Designs | Budget-Friendly Luxury</p>
             <a href="#contact" class="btn">Get Free Consultation</a>
         </div>
     </section>
 
-    <!-- About Us -->
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>Founded by Pranav Chavan, Sunil Chavan, and Samiksha Chavan, we create interiors that are modern, practical, and budget-friendly. Our goal is to blend aesthetics with functionality, ensuring every space is elegant and comfortable.</p>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Founded by <strong>Pranav Chavan, Sunil Chavan, and Samiksha Chavan</strong>, we create luxury interiors that are stylish, functional, and affordable. With years of experience, we design dream spaces with a perfect balance of aesthetics and comfort.</p>
+        </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="section">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service">
-                <h3>Modular Kitchens</h3>
-                <p>Customized kitchen solutions to maximize space & functionality.</p>
-            </div>
-            <div class="service">
-                <h3>Wardrobes & Storage</h3>
-                <p>Stylish wardrobes and smart storage solutions.</p>
-            </div>
-            <div class="service">
-                <h3>Lighting & Ambience</h3>
-                <p>Modern lighting to enhance the mood of your home.</p>
-            </div>
-            <div class="service">
-                <h3>Wall Painting & Décor</h3>
-                <p>Premium textures and custom wall finishes.</p>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Modular Kitchens</h3>
+                    <p>Custom-designed, space-saving, and elegant kitchens.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Wardrobes & Storage</h3>
+                    <p>Modern, space-efficient, and stylish wardrobe solutions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Lighting & Decor</h3>
+                    <p>Premium lighting and decor ideas to elevate your home.</p>
+                </div>
+                <div class="service-item">
+                    <h3>False Ceilings & Walls</h3>
+                    <p>Creative wall designs and ceilings that enhance interiors.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <p>"Legacy Design Studio transformed my apartment beautifully! Their team is amazing, and they delivered exactly what I wanted!"</p>
-            <h4>- Priya Sharma</h4>
-        </div>
-        <div class="testimonial">
-            <p>"Professional, stylish, and within budget! Highly recommended for anyone looking to upgrade their home interiors."</p>
-            <h4>- Rohit Verma</h4>
+    <!-- Animated Numbers Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <span class="counter" data-target="500">0</span>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <span class="counter" data-target="300">0</span>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <span class="counter" data-target="10">0</span>
+                <p>Years of Experience</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>📞 Call: <a href="tel:+918889993092">+91 88899 93092</a></p>
-        <p>📍 Location: Mumbai, India</p>
-        <a href="#home" class="btn">Back to Top</a>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>📍 Mumbai, India</p>
+            <p>📞 <a href="tel:+918889993092">+91 88899 93092</a></p>
+            <p>📧 <a href="mailto:info@legacydesignstudio.com">info@legacydesignstudio.com</a></p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
