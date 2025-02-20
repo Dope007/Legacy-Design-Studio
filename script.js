@@ -1,25 +1,33 @@
-document.addEventListener("scroll", function () {
-    const stats = document.querySelector("#stats");
-    const counters = document.querySelectorAll(".count");
-    let scrolledIntoView = stats.getBoundingClientRect().top < window.innerHeight;
+// Ensure page reloads at top
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 
-    if (scrolledIntoView) {
+// Scroll-triggered animation for numbers
+const counters = document.querySelectorAll('.counter');
+let animationStarted = false;
+
+window.addEventListener('scroll', () => {
+    const statsSection = document.getElementById('stats');
+    const statsPosition = statsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
+
+    if (statsPosition < screenPosition && !animationStarted) {
+        animationStarted = true;
         counters.forEach(counter => {
-            let target = +counter.getAttribute("data-target");
+            let target = +counter.getAttribute('data-target');
             let count = 0;
-            let increment = target / 200;
+            let speed = Math.ceil(target / 100);
 
-            let updateCount = () => {
-                if (count < target) {
-                    count += increment;
-                    counter.innerText = Math.floor(count);
-                    requestAnimationFrame(updateCount);
-                } else {
+            let updateCount = setInterval(() => {
+                count += speed;
+                if (count > target) {
                     counter.innerText = target;
+                    clearInterval(updateCount);
+                } else {
+                    counter.innerText = count;
                 }
-            };
-
-            updateCount();
+            }, 20);
         });
     }
 });
