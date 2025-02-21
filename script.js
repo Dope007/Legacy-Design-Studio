@@ -34,4 +34,4 @@ let index = 0;
 function moveSlide(step) {
     index += step;
     document.querySelector('.carousel-track').style.transform = `translateX(${-index * 100}%)`;
-}
+} 
