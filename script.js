@@ -27,4 +27,4 @@ document.addEventListener("DOMContentLoaded", function() {
             hero.style.boxShadow = "none";
         }, 2000);
     }, 1000);
-});
+}); 
