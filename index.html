@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-
     <!-- Header -->
-    <header class="sticky-header">
-        <div class="container">
-            <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#work">Work Done</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="logo">
+            <img src="logo.PNG" alt="Legacy Design Studio">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#work">Work Done</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -34,10 +32,8 @@
 
     <!-- About Us -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At <strong>Legacy Design Studio</strong>, we specialize in modern, elegant, and functional interior designs...</p>
-        </div>
+        <h2>About Us</h2>
+        <p>At <strong>Legacy Design Studio</strong>, we specialize in modern, elegant, and functional interior designs for homes, offices, and commercial spaces. With <strong>over a decade of experience</strong>, our expert team blends creativity, functionality, and affordability to transform your vision into reality.</p>
     </section>
 
     <!-- Our Services -->
@@ -45,34 +41,33 @@
         <h2>Our Services</h2>
         <div class="services-container">
             <div class="service">Modular Kitchens</div>
-            <div class="service">Modular Wardrobes</div>
+            <div class="service">Wardrobes</div>
             <div class="service">Lighting</div>
             <div class="service">Flooring</div>
-            <div class="service">Electrical Work</div>
-            <div class="service">Wall Painting</div>
+            <div class="service">False Ceilings</div>
+            <div class="service">Painting</div>
         </div>
     </section>
 
-    <!-- Work Done (Carousel) -->
+    <!-- Work Done Carousel -->
     <section id="work" class="work">
         <h2>Work Done</h2>
         <div class="carousel">
-            <div class="carousel-track">
-                <img src="work1.jpg" alt="Project 1">
-                <img src="work2.jpg" alt="Project 2">
-                <img src="work3.jpg" alt="Project 3">
+            <div class="carousel-container">
+                <img src="image1.jpg" alt="Project 1">
+                <img src="image2.jpg" alt="Project 2">
+                <img src="image3.jpg" alt="Project 3">
             </div>
-            <button class="prev">&lt;</button>
-            <button class="next">&gt;</button>
         </div>
     </section>
 
     <!-- Contact Us -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>📞 <strong>+91 8889993092</strong></p>
-        <p>📍 Available for consultation and free quotations.</p>
+        <p><strong>+91 8889993092</strong></p>
+        <p>Available for consultation and free quotations.</p>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
