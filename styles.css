@@ -6,12 +6,13 @@ body {
     background-color: white;
     color: black;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 /* Sticky Header */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: white;
     padding: 15px 5%;
@@ -29,12 +30,6 @@ header .logo img {
 }
 
 /* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -78,7 +73,6 @@ nav ul li a {
     backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 10px;
-    text-align: center;
     color: white;
 }
 
@@ -89,12 +83,16 @@ nav ul li a {
     100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
 }
 
-/* Glowing Effect */
 .consultation-btn.glow-effect {
     animation: glow 2s ease-in-out;
 }
 
-/* Portfolio Carousel */
+/* Section Padding */
+section {
+    padding: 80px 10%;
+}
+
+/* Carousel */
 .carousel {
     position: relative;
     width: 80%;
@@ -125,16 +123,10 @@ nav ul li a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Contact Us */
-.contact {
-    padding: 50px 10%;
-}
-
 /* Mobile Fixes */
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
-        align-items: center;
         padding: 10px;
     }
 
@@ -142,8 +134,4 @@ nav ul li a {
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .contact {
-        padding: 50px 10%;
-    }
-} 
+}
