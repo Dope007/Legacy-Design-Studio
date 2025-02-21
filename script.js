@@ -1,22 +1,28 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.carousel-track');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    
-    let index = 0;
-    
-    nextButton.addEventListener('click', function () {
-        index = (index + 1) % track.children.length;
-        updateCarousel();
+// Number Animation
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+        let count = 0;
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            if (count < target) {
+                count += Math.ceil(target / 100);
+                counter.innerText = count;
+                setTimeout(updateCount, 30);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCount();
     });
+});
 
-    prevButton.addEventListener('click', function () {
-        index = (index - 1 + track.children.length) % track.children.length;
-        updateCarousel();
+// Carousel Scroll
+const carousel = document.querySelector(".carousel");
+carousel.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    carousel.scrollBy({
+        left: event.deltaY > 0 ? 300 : -300,
+        behavior: "smooth",
     });
-
-    function updateCarousel() {
-        const width = track.children[0].clientWidth;
-        track.style.transform = `translateX(-${index * width}px)`;
-    }
 });
