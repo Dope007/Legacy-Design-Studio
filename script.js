@@ -1,28 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling
-    document.querySelectorAll("nav a").forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth Scrolling
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
             e.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             document.getElementById(targetId).scrollIntoView({
-                behavior: "smooth",
-                block: "start"
+                behavior: "smooth"
             });
         });
     });
 
-    // Number animation
-    function animateNumber(id, target) {
-        let num = 0;
-        const interval = setInterval(() => {
-            document.getElementById(id).textContent = num++;
-            if (num > target) clearInterval(interval);
-        }, 30);
+    // Carousel Functionality
+    let currentIndex = 0;
+    function updateCarousel() {
+        const images = document.querySelector('.carousel-images');
+        currentIndex = (currentIndex + 1) % images.children.length;
+        images.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
+    setInterval(updateCarousel, 3000);
 
+    // Light Glow Effect
     setTimeout(() => {
-        animateNumber("projects", 120);
-        animateNumber("years", 10);
-        animateNumber("clients", 250);
-    }, 500);
+        const hero = document.getElementById('hero');
+        hero.style.boxShadow = "0 0 20px gold";
+        setTimeout(() => {
+            hero.style.boxShadow = "none";
+        }, 2000);
+    }, 1000);
 });
