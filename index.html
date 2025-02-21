@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Sticky Header -->
+    <!-- Header -->
     <header>
         <div class="logo">
             <img src="logo.PNG" alt="Legacy Design Studio">
@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Our Services</a></li>
-                <li><a href="#portfolio">Our Work</a></li>
+                <li><a href="#work">Our Work</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -27,51 +27,67 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-text">
-            <h1>Legacy Design Studio</h1>
-            <p>Transforming Spaces with Elegance</p>
+            <h1>Transform Your Space with Legacy Design Studio</h1>
+            <p>Premium interior designs that match your style and budget.</p>
             <a href="#contact" class="consultation-btn">Get Free Consultation</a>
         </div>
     </section>
 
-    <!-- About Us Section -->
+    <!-- About Us -->
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>We bring creativity and affordability together to design the best interiors for you.</p>
+        <p>At <strong>Legacy Design Studio</strong>, we believe every space tells a story. With over a decade of experience in interior design, we specialize in creating elegant, functional, and luxurious environments that reflect your personality.</p>
+
+        <p>Our team of expert designers, architects, and craftsmen work together to transform homes, offices, and commercial spaces into masterpieces of creativity and precision.</p>
+
+        <div class="counters">
+            <div class="counter-item">
+                <span class="counter" data-target="10">0</span>+ Years of Experience
+            </div>
+            <div class="counter-item">
+                <span class="counter" data-target="500">0</span>+ Projects Completed
+            </div>
+            <div class="counter-item">
+                <span class="counter" data-target="200">0</span>+ Satisfied Clients
+            </div>
+        </div>
+
+        <h3>Why Choose Us?</h3>
+        <ul class="about-list">
+            <li><strong>Innovative Designs:</strong> We stay ahead of trends to bring you fresh, modern concepts.</li>
+            <li><strong>Attention to Detail:</strong> Every inch of your space is designed with precision and purpose.</li>
+            <li><strong>Quality Craftsmanship:</strong> We work with skilled artisans to deliver flawless finishes.</li>
+        </ul>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="services">
         <h2>Our Services</h2>
         <div class="service-list">
             <div class="service">Modular Kitchens</div>
-            <div class="service">Wardrobes</div>
-            <div class="service">False Ceilings</div>
+            <div class="service">Wardrobes & Storage</div>
             <div class="service">Lighting & Flooring</div>
         </div>
     </section>
 
-    <!-- Portfolio (Carousel) -->
-    <section id="portfolio" class="portfolio">
-        <h2>Our Work</h2>
-        <div class="carousel">
-            <div class="carousel-track">
-                <img src="image1.jpg" alt="Project 1">
-                <img src="image2.jpg" alt="Project 2">
-                <img src="image3.jpg" alt="Project 3">
-                <img src="image4.jpg" alt="Project 4">
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
+    <!-- Our Work Carousel -->
+    <section id="work" class="carousel">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-track">
+            <img src="work1.jpg" alt="Project 1">
+            <img src="work2.jpg" alt="Project 2">
+            <img src="work3.jpg" alt="Project 3">
         </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </section>
 
-    <!-- Contact Us Section -->
+    <!-- Contact Us -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Call us at <a href="tel:+918889993092">+91 8889993092</a></p>
+        <p>Get in touch for a free consultation.</p>
+        <a href="tel:+918889993092">Call: +91 8889993092</a>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Legacy Design Studio</p>
     </footer>
