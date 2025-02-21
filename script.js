@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const headerHeight = document.querySelector("header").offsetHeight;
+    const consultationBtn = document.querySelector(".consultation-btn");
 
-    // Smooth scrolling
+    // Smooth scrolling for all nav links
     document.querySelectorAll("nav ul li a").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
@@ -10,23 +11,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - headerHeight,
+                    top: targetElement.offsetTop - headerHeight, 
                     behavior: "smooth"
                 });
             }
         });
     });
 
-    // Get Free Consultation Button Animation with Delay
-    const consultationBtn = document.querySelector(".consultation-btn");
-
+    // Consultation button glow effect
     consultationBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        consultationBtn.classList.add("glow-effect");
+        consultationBtn.classList.add("glow");
 
         setTimeout(() => {
-            consultationBtn.classList.remove("glow-effect");
-            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+            consultationBtn.classList.remove("glow");
+            window.scrollTo({
+                top: document.getElementById("contact").offsetTop - headerHeight, 
+                behavior: "smooth"
+            });
         }, 2000);
     });
 });
