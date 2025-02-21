@@ -1,30 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Smooth Scrolling
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener("click", function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: "smooth"
-            });
-        });
+document.addEventListener('DOMContentLoaded', function () {
+    const track = document.querySelector('.carousel-track');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    
+    let index = 0;
+    
+    nextButton.addEventListener('click', function () {
+        index = (index + 1) % track.children.length;
+        updateCarousel();
     });
 
-    // Carousel Functionality
-    let currentIndex = 0;
-    function updateCarousel() {
-        const images = document.querySelector('.carousel-images');
-        currentIndex = (currentIndex + 1) % images.children.length;
-        images.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-    setInterval(updateCarousel, 3000);
+    prevButton.addEventListener('click', function () {
+        index = (index - 1 + track.children.length) % track.children.length;
+        updateCarousel();
+    });
 
-    // Light Glow Effect
-    setTimeout(() => {
-        const hero = document.getElementById('hero');
-        hero.style.boxShadow = "0 0 20px gold";
-        setTimeout(() => {
-            hero.style.boxShadow = "none";
-        }, 2000);
-    }, 1000);
-}); 
+    function updateCarousel() {
+        const width = track.children[0].clientWidth;
+        track.style.transform = `translateX(-${index * width}px)`;
+    }
+});
