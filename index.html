@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="logo.PNG" alt="Legacy Design Studio">
-        </div>
+    <header class="sticky-header">
+        <div class="logo">Legacy Design Studio</div>
         <nav>
             <ul>
                 <li><a href="#about">About Us</a></li>
@@ -33,19 +32,23 @@
     <!-- About Us -->
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>At <strong>Legacy Design Studio</strong>, we specialize in modern, elegant, and functional interior designs for homes, offices, and commercial spaces. With <strong>over a decade of experience</strong>, our expert team blends creativity, functionality, and affordability to transform your vision into reality.</p>
+        <p>At <strong>Legacy Design Studio</strong>, we specialize in creating modern, elegant, and functional interior designs for homes, offices, and commercial spaces.</p>
+        <div class="numbers">
+            <div class="num" data-value="10">0</div>
+            <p>Years of Experience</p>
+            <div class="num" data-value="500">0</div>
+            <p>Projects Completed</p>
+        </div>
     </section>
 
     <!-- Our Services -->
     <section id="services" class="services">
         <h2>Our Services</h2>
         <div class="services-container">
-            <div class="service">Modular Kitchens</div>
-            <div class="service">Wardrobes</div>
-            <div class="service">Lighting</div>
-            <div class="service">Flooring</div>
-            <div class="service">False Ceilings</div>
-            <div class="service">Painting</div>
+            <div class="service-item">Modular Kitchens</div>
+            <div class="service-item">Lighting & Flooring</div>
+            <div class="service-item">False Ceilings</div>
+            <div class="service-item">Wall Designs</div>
         </div>
     </section>
 
@@ -53,10 +56,10 @@
     <section id="work" class="work">
         <h2>Work Done</h2>
         <div class="carousel">
-            <div class="carousel-container">
-                <img src="image1.jpg" alt="Project 1">
-                <img src="image2.jpg" alt="Project 2">
-                <img src="image3.jpg" alt="Project 3">
+            <div class="carousel-inner">
+                <img src="image1.jpg" alt="Work 1">
+                <img src="image2.jpg" alt="Work 2">
+                <img src="image3.jpg" alt="Work 3">
             </div>
         </div>
     </section>
@@ -64,10 +67,11 @@
     <!-- Contact Us -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p><strong>+91 8889993092</strong></p>
+        <p>Call: +91 8889993092</p>
         <p>Available for consultation and free quotations.</p>
     </section>
 
     <script src="script.js"></script>
+
 </body>
 </html>
