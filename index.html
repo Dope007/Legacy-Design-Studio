@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Design Studio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <div class="logo">Legacy <br> Design <br> Studio</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#work">Work Done</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="container">
+            <img src="logo.PNG" alt="Legacy Design Studio" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#work">Work Done</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Experience Luxury Interiors</h1>
@@ -27,38 +32,46 @@
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At <strong>Legacy Design Studio</strong>, we specialize in creating modern, elegant, and functional interior designs for homes, offices, and commercial spaces. With <strong>over a decade of experience</strong>, our expert team blends creativity, functionality, and affordability to transform your vision into reality.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Modular Kitchens</li>
-            <li>Modular Wardrobes</li>
-            <li>Lighting</li>
-            <li>Flooring</li>
-            <li>Electrical Work</li>
-            <li>Civil Work</li>
-            <li>False Ceilings</li>
-            <li>Wall Design & Painting</li>
-        </ul>
-    </section>
-
-    <section id="work">
-        <h2>Work Done</h2>
-        <div class="gallery">
-            <img src="work1.jpg" alt="Interior Design 1">
-            <img src="work2.jpg" alt="Interior Design 2">
-            <img src="work3.jpg" alt="Interior Design 3">
+    <!-- About Us -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At <strong>Legacy Design Studio</strong>, we specialize in modern, elegant, and functional interior designs...</p>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Our Services -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">Modular Kitchens</div>
+            <div class="service">Modular Wardrobes</div>
+            <div class="service">Lighting</div>
+            <div class="service">Flooring</div>
+            <div class="service">Electrical Work</div>
+            <div class="service">Wall Painting</div>
+        </div>
+    </section>
+
+    <!-- Work Done (Carousel) -->
+    <section id="work" class="work">
+        <h2>Work Done</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="work1.jpg" alt="Project 1">
+                <img src="work2.jpg" alt="Project 2">
+                <img src="work3.jpg" alt="Project 3">
+            </div>
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>📞 <a href="tel:+918889993092">+91 8889993092</a></p>
-        <p>Available for consultation and free quotations.</p>
+        <p>📞 <strong>+91 8889993092</strong></p>
+        <p>📍 Available for consultation and free quotations.</p>
     </section>
 
 </body>
