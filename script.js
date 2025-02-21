@@ -1,24 +1,28 @@
-// Smooth Scrolling
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling
+    document.querySelectorAll("nav a").forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
     });
-});
 
-// Number Animation
-const counters = document.querySelectorAll('.num');
-counters.forEach(counter => {
-    counter.innerText = '0';
-    const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const current = +counter.innerText;
-        const increment = target / 100;
-        if (current < target) {
-            counter.innerText = Math.ceil(current + increment);
-            setTimeout(updateCounter, 30);
-        }
-    };
-    updateCounter();
+    // Number animation
+    function animateNumber(id, target) {
+        let num = 0;
+        const interval = setInterval(() => {
+            document.getElementById(id).textContent = num++;
+            if (num > target) clearInterval(interval);
+        }, 30);
+    }
+
+    setTimeout(() => {
+        animateNumber("projects", 120);
+        animateNumber("years", 10);
+        animateNumber("clients", 250);
+    }, 500);
 });
